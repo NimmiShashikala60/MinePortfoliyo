@@ -49,30 +49,73 @@
                             <p class="tab-links" onclick="opentab('experience')">Experience</p>
                             <p class="tab-links" onclick="opentab('education')">Education</p>
                   </div>
-                  <div class="tab-contents active-tab">
+                  <div class="tab-contents active-tab" id="skills">
                          <ul>
                             <li><span>UI?UX</span><br>Designer Web/App interfaces</li>
                             <li><span>Web Developent</span><br>Designer Web/App interfaces</li>
                             <li><span>App Developent</span><br>Buliding Android/iOS apps</li>
                          </ul>
                   </div>
-                  <div class="tab-contents ">
+                  <div class="tab-contents" id="experience">
                     <ul>
                        <li><span>2021-2023</span><br>Designer Web/App interfaces</li>
                        <li><span>Web Developent</span><br>Designer Web/App interfaces</li>
                        <li><span>App Developent</span><br>Buliding Android/iOS apps</li>
                     </ul>
              </div>
-             <div class="tab-contents">
+             <div class="tab-contents" id="education">
                 <ul>
                    <li><span>UI?UX</span><br>Designer Web/App interfaces</li>
                    <li><span>Web Developent</span><br>Designer Web/App interfaces</li>
                    <li><span>App Developent</span><br>Buliding Android/iOS apps</li>
                 </ul>
-         </div>
+                  </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- =========================service===================================== -->
+    <div id="services">
+        <div id="container">
+            <h1 class="sub-title">My services</h1> 
+            <div class="services-list"></div>
+            <div>
+                <h2>Web Designer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>UI/UX Designer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    <a href="#">learn more</a>
+            </div>    
+            <div>
+                <h2>App Designer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    <a href="#">learn more</a>
+            </div>                   
+        </div>
+
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablink of tablink){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontents of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active tab");
+        }
+
+
+
+    </script>
 </body>
 </html>
