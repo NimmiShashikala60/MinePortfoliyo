@@ -63,13 +63,13 @@ nav ul li a:hover::after{
 
 #content{
     display: flex;
-    height: 80vh;
+    height: 100vh;
     justify-content: space-between;
     align-items: center;
 }
 
 #content img{
-    width: 300px;
+    width: 400px;
 }
 .header-text span{
     color: #ff004f;
@@ -128,8 +128,14 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #ff004f;
+    color: #b54769;
     font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
 }
 
 
